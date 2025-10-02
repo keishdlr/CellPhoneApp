@@ -9,7 +9,7 @@ public class CellPhone {
     String carrier = "";
     String owner = "";
 
-    public CellPhone(int phoneNumber, int serialNumber, String model, String carrier, String owner) {
+    public CellPhone(String keisha) {
         this.phoneNumber = phoneNumber;
         this.serialNumber = serialNumber;
         this.model = model;
