@@ -3,13 +3,14 @@ package com.pluralsight;
 public class CellPhone {
 
     // in this clas
-    int phoneNumber = 0;
-    int serialNumber = 0;
-    String model = "";
-    String carrier = "";
-    String owner = "";
 
-    public CellPhone(String keisha) {
+    private int serialNumber = 0;
+    private String phoneNumber = "";
+   private String model = "";
+   private String carrier = "";
+   private String owner = "";
+
+    public CellPhone(String model,String carrier, String owner, String phoneNumber, int serialNumber) {
         this.phoneNumber = phoneNumber;
         this.serialNumber = serialNumber;
         this.model = model;
@@ -17,16 +18,16 @@ public class CellPhone {
         this.owner = owner;
     }
 
-    public int getPhoneNumber() {
-        return phoneNumber;
+    public String getPhoneNumber() {
+        return this.phoneNumber;
     }
 
-    public void setPhoneNumber(int phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
     public int getSerialNumber() {
-        return serialNumber;
+        return this.serialNumber;
     }
 
     public void setSerialNumber(int serialNumber) {
@@ -34,7 +35,7 @@ public class CellPhone {
     }
 
     public String getModel() {
-        return model;
+        return this.model;
     }
 
     public void setModel(String model) {
@@ -42,7 +43,7 @@ public class CellPhone {
     }
 
     public String getCarrier() {
-        return carrier;
+        return this.carrier;
     }
 
     public void setCarrier(String carrier) {
@@ -50,10 +51,11 @@ public class CellPhone {
     }
 
     public String getOwner() {
-        return owner;
+        return this.owner;
     }
 
     public void setOwner(String owner) {
         this.owner = owner;
     }
+
 }
